@@ -2,6 +2,75 @@
 
 A production-ready, full-stack AI platform that simulates structured technical interviews with dynamic question generation based on candidate resumes, target job roles, RAG (Retrieval-Augmented Generation) context from indexed knowledge bases, and adaptive response evaluation.
 
+![InterviewAI Dashboard](docs/images/dashboard.png)
+
+---
+
+## 📸 Platform Showcase
+
+### 1. Interactive Dashboard
+Landing page matching the visual source of truth with quick-start actions, feature tags, and performance statistics.
+![Dashboard Overview](docs/images/dashboard.png)
+
+### 2. Step 1: Resume Upload & Candidate Profiling
+Drag-and-drop or file selector supporting PDF and TXT documents up to 5MB. Automatic extraction of candidate technical experience, ML/AI projects, frameworks, and deployment background.
+![Resume Upload](docs/images/upload_resume.png)
+
+### 3. Step 2: Role Selection & Question Count Picker
+Interactive selection across 6 engineering roles (*AI/ML Engineer, Backend Engineer, Full Stack Developer, Data Engineer, Software Engineer, Cloud Engineer*) with dynamic question count configuration (`5`, `7`, `12`, or `15` questions).
+![Role and Question Count Selection](docs/images/role_and_question_selection.png)
+
+### 4. Step 3: RAG Retrieval & Blueprint Synthesis
+Real-time orchestration retrieving 1536-dimensional Pinecone vector chunks and constructing an upfront interview blueprint across mixed question types (MCQ, Short Answer, Scenario, Descriptive).
+![RAG Context Generation](docs/images/rag_generation_loading.png)
+
+### 5. Candidate Profile & Metrics Tracking
+Comprehensive candidate profile overview with interview history, average competency score, and tracked domain performance.
+![Candidate Profile](docs/images/candidate_profile.png)
+
+---
+
+## 💡 Sample Interview Outputs & Adaptive Evaluation
+
+### Sample 1: Multiple Choice Question (MCQ) - Deep Learning & Vision
+> **Question 1 of 15** · `Deep Learning and Computer Vision` · `Easy`
+>
+> **Question:** In a typical CNN architecture for image classification, which operation primarily provides translation (spatial) invariance?
+> - **A)** Convolution with stride 1
+> - **B)** Max pooling *(Selected)*
+> - **C)** Batch normalization
+> - **D)** Fully connected layer
+>
+> **Evaluation Result:**
+> - **Score:** `10/10` | **Rating:** `Excellent`
+> - **Feedback:** Correct choice! Pooling layers (especially max pooling) downsample feature maps, reducing sensitivity to small translations in the input image and thus providing spatial invariance.
+> - **Adaptive Next Difficulty:** `Medium`
+
+### Sample 2: Short Answer - Machine Learning Fundamentals
+> **Question 2 of 15** · `Machine Learning Fundamentals` · `Medium`
+>
+> **Question:** Briefly describe how L2 regularization and dropout each mitigate overfitting, and state one practical way to apply early stopping during model training.
+>
+> **Candidate Answer:** L2 regularization adds a squared weight penalty to the loss function that shrinks non-zero weights smoothly towards zero, preventing individual features from dominating. Dropout randomly zeroes out neuron activations during training passes to prevent co-adaptation. Early stopping monitors validation set loss after each epoch and stops training when performance ceases to improve.
+>
+> **Evaluation Result:**
+> - **Score:** `9/10` | **Rating:** `Excellent`
+> - **Feedback:** Comprehensive explanation clearly differentiating weight decay penalties from activation dropout, with accurate validation-loss monitoring criteria.
+> - **Key Strengths:** Accurate distinction of regularization mechanisms; practical early stopping rule.
+
+### Sample 3: Multiple Choice Question (MCQ) - RAG & Vector Search
+> **Question 3 of 15** · `RAG and Vector Databases` · `Medium`
+>
+> **Question:** When indexing dense vector embeddings in Pinecone for a RAG pipeline, which similarity metric is invariant to vector magnitude when embeddings are unit-normalized?
+> - **A)** Cosine Similarity *(Selected)*
+> - **B)** Manhattan Distance
+> - **C)** Chebyshev Distance
+> - **D)** Hamming Distance
+>
+> **Evaluation Result:**
+> - **Score:** `10/10` | **Rating:** `Excellent`
+> - **Feedback:** Correct! Cosine similarity measures the angle between vectors, which is strictly identical to dot product when vectors are L2-normalized.
+
 ---
 
 ## 🌟 Visual Source of Truth
