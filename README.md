@@ -2,31 +2,48 @@
 
 A production-ready, full-stack AI platform that simulates structured technical interviews with dynamic question generation based on candidate resumes, target job roles, RAG (Retrieval-Augmented Generation) context from indexed knowledge bases, and adaptive response evaluation.
 
-![InterviewAI Dashboard](docs/images/dashboard.png)
+<p align="center">
+  <img src="docs/images/dashboard_app.png" alt="InterviewAI Live Application Dashboard" width="100%" />
+</p>
 
 ---
 
 ## 📸 Platform Showcase
 
-### 1. Interactive Dashboard
-Landing page matching the visual source of truth with quick-start actions, feature tags, and performance statistics.
-![Dashboard Overview](docs/images/dashboard.png)
+### 1. Interactive Dashboard (Live Implementation)
+The landing interface provides one-click interview launch workflows, quick-start role templates, feature highlights, and real-time system health telemetry.
+
+<p align="center">
+  <img src="docs/images/dashboard.png" alt="Interactive Dashboard Overview" width="100%" />
+</p>
 
 ### 2. Step 1: Resume Upload & Candidate Profiling
 Drag-and-drop or file selector supporting PDF and TXT documents up to 5MB. Automatic extraction of candidate technical experience, ML/AI projects, frameworks, and deployment background.
-![Resume Upload](docs/images/upload_resume.png)
+
+<p align="center">
+  <img src="docs/images/upload_resume.png" alt="Resume Upload" width="100%" />
+</p>
 
 ### 3. Step 2: Role Selection & Question Count Picker
 Interactive selection across 6 engineering roles (*AI/ML Engineer, Backend Engineer, Full Stack Developer, Data Engineer, Software Engineer, Cloud Engineer*) with dynamic question count configuration (`5`, `7`, `12`, or `15` questions).
-![Role and Question Count Selection](docs/images/role_and_question_selection.png)
+
+<p align="center">
+  <img src="docs/images/role_and_question_selection.png" alt="Role and Question Count Selection" width="100%" />
+</p>
 
 ### 4. Step 3: RAG Retrieval & Blueprint Synthesis
 Real-time orchestration retrieving 1536-dimensional Pinecone vector chunks and constructing an upfront interview blueprint across mixed question types (MCQ, Short Answer, Scenario, Descriptive).
-![RAG Context Generation](docs/images/rag_generation_loading.png)
+
+<p align="center">
+  <img src="docs/images/rag_generation_loading.png" alt="RAG Context Generation" width="100%" />
+</p>
 
 ### 5. Candidate Profile & Metrics Tracking
 Comprehensive candidate profile overview with interview history, average competency score, and tracked domain performance.
-![Candidate Profile](docs/images/candidate_profile.png)
+
+<p align="center">
+  <img src="docs/images/candidate_profile.png" alt="Candidate Profile" width="100%" />
+</p>
 
 ---
 
@@ -73,9 +90,13 @@ Comprehensive candidate profile overview with interview history, average compete
 
 ---
 
-## 🌟 Visual Source of Truth
+## 🌟 Visual Source of Truth & Design Alignment
 
-The user interface matches the reference design structure, spacing, color palette (`#4F46E5` primary purple, crisp light `#F8FAFC` background, rounded cards), progress indicators, live interview screen with timer, completed summary, and detailed accordion feedback.
+The platform UI is engineered to strictly mirror the visual design specifications, color tokens (`#4F46E5` primary purple, `#F8FAFC` slate canvas), card border radiuses, typography, progress telemetry, and modular question flow.
+
+| Figma Reference Design | Live Implemented Dashboard |
+|:---:|:---:|
+| <img src="docs/images/reference_ui.png" alt="Figma Design Reference" width="100%" /> | <img src="docs/images/dashboard_app.png" alt="Live Implemented Dashboard" width="100%" /> |
 
 ---
 
