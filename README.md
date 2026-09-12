@@ -6,6 +6,8 @@ A production-ready, full-stack AI platform that simulates structured technical i
   <img src="docs/images/dashboard_app.png" alt="InterviewAI Live Application Dashboard" width="100%" />
 </p>
 
+> 📖 **Comprehensive Technical Manual**: For an in-depth architectural breakdown, technology stack justification, end-to-end data pipelines, and output image analysis, refer to [PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md).
+
 ---
 
 ## 📸 Platform Showcase
